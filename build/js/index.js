@@ -1,7 +1,14 @@
 "use strict";
 // const btn = document.getElementById('btn');
-// // Non-Null Assertion Operator
+// // Non-Null Assertion Operator  '!'  TypeScript Considers it to be not Null
 const btn = document.getElementById('btn');
-btn === null || btn === void 0 ? void 0 : btn.addEventListener('click', function () {
-    alert('Clicked');
+const input = document.getElementById('input');
+btn.addEventListener('click', function () {
+    alert(input.value);
+    input.value = '';
 });
+// // Type Assertions
+const mystery = 'Hello';
+const charLength = mystery.length;
+console.log(charLength);
+console.log(mystery); // Still the Type Remains Unknown as Declared Before
