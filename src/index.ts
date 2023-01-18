@@ -4,6 +4,10 @@
 const btn = document.getElementById('btn')!;
 const input = document.getElementById('input')! as HTMLInputElement;
 
+//  Another Syntax
+
+(<HTMLInputElement>input).value;
+
 btn.addEventListener('click', function () {
 	alert(input.value);
 	input.value = '';

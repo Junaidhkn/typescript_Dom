@@ -3,6 +3,8 @@
 // // Non-Null Assertion Operator  '!'  TypeScript Considers it to be not Null
 const btn = document.getElementById('btn');
 const input = document.getElementById('input');
+//  Another Syntax
+input.value;
 btn.addEventListener('click', function () {
     alert(input.value);
     input.value = '';
